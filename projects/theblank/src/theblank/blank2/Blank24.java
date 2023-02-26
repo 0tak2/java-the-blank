@@ -46,7 +46,6 @@ class MenuCommon {
 	}
 
 	public String getMenuRegion() {
-		System.out.println("asdf");
 		return menuRegion;
 	}
 
@@ -113,12 +112,11 @@ public class Blank24 {
 	}
 }
 
-// 실행 결과
 //맥도날드 전사 메뉴정보조회
-//검색할 메뉴 이름을 입력해주세요. > BigMac
-//Name: BigMac
-//Comment: Big Big One
-//Price(US): 5
-//null
-//Name(Local): Big Mac
-//Price(Local): 5
+//검색할 메뉴 이름을 입력해주세요. > BulgogiBurger
+//Name: BulgogiBurger
+//Comment: Inspired By Korean Food
+//Price(US): 3
+//Region Code: KR
+//Name(Local): 불고기버거
+//Price(Local): 3500원

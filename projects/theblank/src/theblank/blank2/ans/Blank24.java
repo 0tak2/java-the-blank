@@ -46,7 +46,6 @@ class MenuCommon {
 	}
 
 	public String getMenuRegion() {
-		System.out.println("asdf");
 		return menuRegion;
 	}
 
@@ -69,14 +68,6 @@ class MenuUS extends MenuCommon {
 		super(menuName, menuComment, menuPrice, "US");
 		this.menuNameLocal = menuNameLocal;
 		this.menuPriceLocal = menuPriceLocal;
-	}
-
-	public String getMenuRegion() {
-		return menuRegion;
-	}
-
-	public void setMenuRegion(String menuRegion) {
-		this.menuRegion = menuRegion;
 	}
 
 	public String getMenuNameLocal() {
@@ -110,14 +101,6 @@ class MenuKR extends MenuCommon {
 		super(menuName, menuComment, menuPrice, "KR");
 		this.menuNameLocal = menuNameLocal;
 		this.menuPriceLocal = menuPriceLocal;
-	}
-
-	public String getMenuRegion() {
-		return menuRegion;
-	}
-
-	public void setMenuRegion(String menuRegion) {
-		this.menuRegion = menuRegion;
 	}
 
 	public String getMenuNameLocal() {
@@ -171,12 +154,14 @@ public class Blank24 {
 					System.out.println("Comment: " + menu.getMenuComment());
 					System.out.println("Price(US): " + menu.getMenuPrice());
 					
+
+					System.out.println("Region Code: " + menu.getMenuRegion());
 					if (menu instanceof MenuUS) {
 						System.out.println("Name(Local): " + ((MenuUS) menu).getMenuNameLocal());
 						System.out.println("Price(Local): " + ((MenuUS) menu).getMenuPriceLocal());
 					} else if (menu instanceof MenuKR) {
 						System.out.println("Name(Local): " + ((MenuKR) menu).getMenuNameLocal());
-						System.out.println("Price(Local): " + ((MenuKR) menu).getMenuPriceLocal());
+						System.out.println("Price(Local): " + ((MenuKR) menu).getMenuPriceLocal() + "원");
 					}
 					
 					break;
